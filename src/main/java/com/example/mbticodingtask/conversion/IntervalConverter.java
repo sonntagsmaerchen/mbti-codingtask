@@ -8,6 +8,10 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * converts API to business objects and vice versa
+ * TODO: use built-in Spring Conversion Service or MapStruct if more functionality is needed
+ */
 @Component
 public class IntervalConverter {
 

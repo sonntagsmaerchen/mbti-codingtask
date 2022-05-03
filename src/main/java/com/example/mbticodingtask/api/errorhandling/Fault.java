@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.List;
 
+/**
+ * Fault objects should be passed as response body in handled 4xx and 5xx responses
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

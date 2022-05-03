@@ -22,11 +22,15 @@ public class IntervalController {
     private final IntervalService intervalService;
     private final IntervalConverter converter;
 
+    /**
+     * accepts a list of unmerged intervals in JSON format; validates the list and returns the merged intervals
+     */
     @PostMapping("/interval-merge")
     public ResponseEntity<IntervalRequest> postIntervalMerge(@RequestBody @Valid final IntervalRequest request) {
         final List<Interval> result = intervalService.mergeIntervals(
                 converter.convertRequestToIntervalList(request));
 
+        //TODO: use different objects for request and return value
         return ResponseEntity.ok(converter.convertIntervalListToRequest(result));
     }
 }

@@ -10,6 +10,12 @@ import java.util.List;
 @Component
 public class IntervalService {
 
+    /**
+     * merges overlapping number intervals, as explained in the coding-task
+     *
+     * @param inputList - list of unmerged intervals
+     * @return - list of merged intervals
+     */
     public List<Interval> mergeIntervals(final List<Interval> inputList) {
         final List<Interval> mergedList = new ArrayList<>();
         final List<Interval> sortedList = new ArrayList<>(inputList);

@@ -5,6 +5,9 @@ import com.example.mbticodingtask.api.model.IntervalDTO;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+/**
+ * an Interval is valid if it starts before or at the same number as it ends
+ */
 public class IntervalConstraintValidator implements ConstraintValidator<IntervalConstraint, IntervalDTO> {
 
     @Override
