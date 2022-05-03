@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Data
@@ -14,7 +13,6 @@ import java.util.List;
 @NoArgsConstructor
 public class IntervalRequest {
 
-    @NotNull
-    @NotEmpty
+    @NotEmpty(message = "Interval List must not be empty")
     private List<@Valid IntervalDTO> intervalList;
 }

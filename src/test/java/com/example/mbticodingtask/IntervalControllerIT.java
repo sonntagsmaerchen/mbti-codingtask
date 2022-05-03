@@ -82,7 +82,7 @@ public class IntervalControllerIT {
     }
 
     private Fault createExpectedFaultEmptyRequest() {
-        return new Fault("must not be null; must not be empty; ", List.of("intervalList", "intervalList"));
+        return new Fault("Interval List must not be empty; ", Collections.singletonList("intervalList"));
     }
 
     private Fault createExpectedFaultInvalidInterval() {
