@@ -1,6 +1,6 @@
 ## MBTI Coding-Task
 
-Bearbeitunszeit: ca. 5-6 Stunden
+Bearbeitunszeit: ca. 4-5 Stunden
 
 ### Voraussetzungen zum Bauen:
 
@@ -14,7 +14,7 @@ JDK Java11+, Maven (mit Zugriff auf Repository welches alle Dependencies enthäl
 
 Die Applikation bietet eine REST API mit einem Endpunkt */interval-merge* der den Input per POST entgegen nimmt.
 
-Der JSON Body für den Input aus der Aufgabe liegt im Verzeichnis: *src/test/resources*
+Als Beispiel liegt der JSON Body für den Input aus der Aufgabe im Verzeichnis: *src/test/resources*.
 Einige invalide Inputs werden geprüft (wie zb. Intervalle mit Ende vor Start) und der Body der Antwort enthält dann den
 entsprechenden Grund und die Felder.
 

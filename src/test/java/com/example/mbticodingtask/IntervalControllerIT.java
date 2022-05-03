@@ -48,7 +48,7 @@ public class IntervalControllerIT {
     }
 
     @Test
-    void postIntervalMerge_emptyRequest() throws Exception {
+    void postIntervalMerge_emptyRequest400() throws Exception {
         final MvcResult result = mockMvc.perform(post(INTERVAL_API_PATH)
                                                 .contentType(MediaType.APPLICATION_JSON)
                                                 .content("{}"))
@@ -63,7 +63,7 @@ public class IntervalControllerIT {
     }
 
     @Test
-    void postIntervalMerge_invalidInterval() throws Exception {
+    void postIntervalMerge_invalidInterval400() throws Exception {
         final MvcResult result = mockMvc.perform(post(INTERVAL_API_PATH)
                                                 .contentType(MediaType.APPLICATION_JSON)
                                                 .content(new String(Files.readAllBytes(Paths.get(PATH_TO_TESTRESOURCES + "inputInvalid.json")))))
