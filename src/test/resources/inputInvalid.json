@@ -1,0 +1,20 @@
+{
+  "intervalList": [
+    {
+      "start": 25,
+      "end": 30
+    },
+    {
+      "start": 19,
+      "end": 2
+    },
+    {
+      "start": 14,
+      "end": 23
+    },
+    {
+      "start": 4,
+      "end": 8
+    }
+  ]
+}
