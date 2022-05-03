@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Component
 public class IntervalService {
 
     public List<Interval> mergeIntervals(final List<Interval> inputList) {
-        //TODO: If inputList Empty & if Intervals not valid
         final List<Interval> mergedList = new ArrayList<>();
         final List<Interval> sortedList = new ArrayList<>(inputList);
         sortedList.sort(Interval::compareTo);
